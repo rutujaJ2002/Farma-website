@@ -15,5 +15,5 @@ window.onscroll = () =>{
 
 //onclick to producs for pro-description
 document. getElementById("myButton"). onclick = function () {
-    location. href = "https://krjiympbc2wrbppfyzlbgw.on.drv.tw/website/description.html";
+    location. href = "https://rutujaj2002.github.io/Farma-website/description.html";
 };
