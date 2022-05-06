@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm website</title>
+
+    <!--custom style file-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+    .navigation{
+    padding: 3rem 6%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .9rem;
+    }
+
+    .navigation i{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .navigation i.fa-angle-right{
+        margin-top: .25rem;
+    }
+
+    .navigation p{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    </style>
+
+
+    <!--font-awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--swiper's css link-->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+</head>
+<body>
+    
+    <!--header section-->
+    <header>
+        <div class="header-1">
+            <div class="share">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+
+            <div class="email">
+                <a href="#" class="far fa-envelope"></a>
+                <a href="#" class="txts">email@email.com</a>
+            </div>
+
+            <div class="call">
+                <a href="#" class="fa fa-phone"></i>
+                <a href="#" class="txts">+123-456-7890</a>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <div class="logo">
+                <i class="fas fa-seedling"></i>
+                <span>Farma</span>
+            </div>
+
+            <div class="fas fa-bars" id="menu-btn">
+
+            </div>
+
+            <nav class="navbar">
+                <a href="https://rutujaj2002.github.io/Farma-website/index.html" class="active">Home</a>
+                <a href="https://rutujaj2002.github.io/Farma-website/about.html">About</a>
+                <a href="https://rutujaj2002.github.io/Farma-website/services.html" >Services</a>
+                <a href="https://rutujaj2002.github.io/Farma-website/product.html" >Products</a>
+                <a href="https://rutujaj2002.github.io/Farma-website/contact.html" >Contact</a>
+            </nav>
+
+            <div class="search" id="search">
+                <a href="https://rutujaj2002.github.io/Farma-website/wishlist.html" class="far fa-heart"></a>
+            </div>
+        </div>
+    </header>
+
+    <!--head section-->
+    <div class="navigation">
+        <i class="fas fa-home"></i>
+        <p>Home</p>
+        <i class="fas fa-angle-right"></i>
+        <p>Product Description</p>
+    </div>
+
+
+    <!--product description scetion-->
+    <section class="description">
+        <div class="row">
+            <div class="column-1">
+                <!--product image & buttons-->
+                <div class="image">
+                    <img src="images/grapes.png" alt="">
+                </div>
+                <div class="buttons">
+                    <a href="#" class="blue btn">Add To Wishlist</a>
+                    <a href="#" class="green btn">Share</a>
+                </div>
+            </div>
+
+            <div class="column-2">
+                <!--description-->
+                <div class="first">
+                    <h3>Fresh Vegetables</h3>
+                    <p>By Farma</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="second">
+                    <div class="price">
+                        <p>M.R.P.: <span>$7.00</span></p>
+                        <p>Deal Price:<span class="d-price">$5.35</span></p>
+                        <p>You Saved: <span class="s-price">$1.65</span></p>
+                    </div>
+
+                    <div class="policies">
+                        <div class="box">
+                            <i class="fas fa-retweet"></i>
+                            <p>15 days replacement</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fas fa-truck"></i>
+                            <p>Fast & safe delivery</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fas fa-check-double"></i>
+                            <p>High quality product</p>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="third">
+                    <h3>Status: <span>Available</span></h3>
+
+                    <div class="qty">
+                        <h6>Quantity:</h6>
+                        <div class="qty-box">
+                            <button data-id="pro1"><i class="fas fa-angle-up"></i></button>
+                            <input type="text" data-id="pro1" disabled value="1" placeholder="1">
+                            <button data-id="pro1"><i class="fas fa-angle-down"></i></button>
+                        </div>
+                    </div>
+
+                    <h3>Size:</h3>
+                    <div class="sizes">
+                        <span>one</span>
+                        <span>two</span>
+                        <span>three</span>
+                    </div>
+
+                    <h3>Product Description</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quam placeat eaque quos. Sed, doloremque? Fugiat possimus ad aperiam corporis, molestiae, voluptatum minus asperiores, assumenda sit doloremque at voluptatem dolorem!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--similiar products-->
+    <section class="choices">
+        <h3>People also searched for:</h3>
+        <hr/>
+
+        <div class="swiper-container product-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/apple.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p>Apple</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="price">$5.00</p>
+                            <span>$7.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/banana.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p>Banana</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="price">$5.00</p>
+                            <span>$7.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/carrot.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p>Carrot</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="price">$5.00</p>
+                            <span>$7.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/cherry.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p>Cherry</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="price">$5.00</p>
+                            <span>$7.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/fruits.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p>fruits</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="price">$5.00</p>
+                            <span>$7.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/kivi.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p>Kivi</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="price">$5.00</p>
+                            <span>$7.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/milk.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p>Milk & eggs</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="price">$5.00</p>
+                            <span>$7.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/tomato.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p>Tomato</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="price">$5.00</p>
+                            <span>$7.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer section-->
+    <footer class="footer" style="background: url(images/wheet.jpg);">
+        <div class="about">
+            <h3>Farma</h3>
+            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odio ullam veritatis, nostrum aperiam labore vel?</p>
+        </div>
+
+        <div class="quick-links">
+            <h3>Quick links</h3>
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+            <a href="#">FAQs</a>
+            <a href="#">Contact</a>
+            <a href="#">Delivery</a>
+            <a href="#">Policies</a>
+        </div>
+
+        <div class="contacts">
+            <h3>Get in touch</h3>
+            <div class="address">
+                <i class="fas fa-map"></i>
+                <p>302 Sevagiri Nagar, Pandharpur, Maharashtra, India-415 504</p>
+            </div>
+
+            <div class="cll">
+                <i class="fas fa-phone"></i>
+                <p>+123-456-7890</p>
+            </div>
+
+            <div class="mail">
+                <i class="fas fa-envelope"></i>
+                <p>email@email.com</p>
+            </div>
+        </div>
+
+        <div class="s-media">
+            <h3>stay connected</h3>
+            <div class="s-icon">
+                <a href="#" class="fab fa-facebook"></a>
+                <p>Facebook</p>
+            </div>
+
+            <div class="s-icon">
+                <a href="#" class="fab fa-twitter"></a>
+                <p>twitter</p>
+            </div>
+
+            <div class="s-icon">
+                <a href="#" class="fab fa-instagram"></a>
+                <p>instagram</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--copright section-->
+    <section class="copyright" id="copyright">
+        <div class="footer-2">
+            <div class="copy">
+                Copyright ©2022 All rights reserved | By <span> CompanyName </span>
+            </div>
+            <div class="bottom-navbar">
+                <a href="https://rutujaj2002.github.io/Farma-website/index.html">Home</a>
+                <a href="https://rutujaj2002.github.io/Farma-website/about.html">About</a>
+                <a href="https://rutujaj2002.github.io/Farma-website/services.html" >Services</a>
+                <a href="https://rutujaj2002.github.io/Farma-website/product.html" >Products</a>
+                <a href="https://rutujaj2002.github.io/Farma-website/contact.html" >Contact</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--custom js file link-->
+    <script src="js/script.js"></script>
+
+     <!--swiper js cdn link-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper5 = new Swiper(".product-slider", {
+            breakpoints: {
+            0: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            991:{
+                slidesPerView: 3
+            }
+        },
+        spaceBetween: 30,
+        autoplay:true,
+        disabledOnInteraction:false,
+      });
+      
+    </script>
+
+</body>
+</html>
